@@ -1,0 +1,1 @@
+<div class="container-fluid footer text-center text-white p-3"> © Glatt - Gérald</div>

@@ -1,0 +1,163 @@
+body{
+    font-family: 'Fredoka One', cursive;
+    /* height: 200vh;
+    background: linear-gradient(rgb(14, 54, 97), purple); */
+    background-image: url(../../sources/images/background.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-decoration-skip: drop-shadow;
+    filter: drop-shadow(0 0 0.75rem rgb(155, 223, 124));
+   
+    
+}
+
+
+.perso_bgBlue{
+    background-color: rgb(40,54,69) ;
+}
+.perso_ColorBlueLight{
+    color: rgb(93, 93, 180) !important;
+}
+
+nav a{
+    color: white !important;
+    font-size: 25px;
+}
+nav a:hover{
+    color: #ff8000 !important;
+}
+/* .perso_bgBlueDegrade{
+    background: linear-gradient(rgb(40,54,69), white);
+} */
+html{
+    scroll-behavior: smooth;
+}
+
+.footer{
+    background-color:black ;
+    
+}
+
+.navbar-brand{
+    animation-name:brand;
+    animation-duration:2s;
+    position:relative;
+}
+
+@keyframes brand{
+    0%{left:-1000px;}
+    100%{left:0px;}
+}
+.navbar-nav{
+    animation-name:lien;
+    animation-duration:2.5s;
+    position:relative;
+}
+@keyframes lien{
+    0%{left:+1000px;}
+    100%{left:0px;}
+}
+
+.monBouton{
+    animation-name:saut;
+    animation-duration:0.5s;
+    position:relative;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes saut{
+    0%
+    {
+        transition: all 200ms ease-in;
+        transform: scale(1);
+    }
+    100%
+    {
+        transition: all 200ms ease-in;
+        transform: scale(1.2);
+    }
+}
+
+.animationClient1{
+    animation-name:animationClient1;
+    animation-duration:1s;
+    position:relative;
+}
+
+@keyframes animationClient1{
+    0%
+    {
+        left: -1000px;
+    }
+    100%
+    {
+        left: 0px;
+    }
+}
+
+.animationClient2{
+    animation-name:animationClient2;
+    animation-duration:1s;
+    position:relative;
+}
+
+@keyframes animationClient2{
+    0%
+    {
+        bottom: -100px;
+    }
+    100%
+    {
+        bottom: 0px;
+    }
+}
+
+.animationClient3{
+    animation-name:animationClient3;
+    animation-duration:1s;
+    position:relative;
+}
+
+@keyframes animationClient3{
+    0%
+    {
+        left: +1000px;
+    }
+    100%
+    {
+        left: 0px;
+    }
+}
+/* section2 */
+#target{
+    display: flex;
+    width: 300px;
+    text-align: left;
+    animation: color 30s alternate infinite;
+    perspective: 200px;
+    transform: translateX(26px);
+}
+@keyframes color {
+    0% {color: blue;}
+    50% {color: purple;}
+    100% {color: blue;}
+}
+.letter{
+    transform: translateZ(200px);
+}
+@keyframes anim{
+    25% {
+        transform: translateZ(0px);
+        opacity: 1;
+    }
+    32% {
+        opacity: 0;
+        transform: translateZ(-280px) translateX(200px);
+
+    }
+}
+
+
